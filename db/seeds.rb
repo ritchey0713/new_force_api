@@ -1,7 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+3.times do |t_member|
+    TeamMember.create!(uplay: "tester101", rank: "gold 1", position: "roam", def_main: "Jager", atk_main: "Zofia")
+end
+
+4.times do |season|
+    Season.create!(mmr: 5000, kda: 1.54, wl: 9.7, headshot_ratio: 5.55, team_member_id: 1)
+end 
+
+4.times do |season|
+    Season.create!(mmr: 5000, kda: 1.54, wl: 9.7, headshot_ratio: 5.55, team_member_id: 2)
+end 
+
+
+4.times do |season|
+    Season.create!(mmr: 5000, kda: 1.54, wl: 9.7, headshot_ratio: 5.55, team_member_id: 3)
+end 
+
+4.times do |season|
+    Season.create!(mmr: 5000, kda: 1.54, wl: 9.7, headshot_ratio: 5.55, team_member_id: 4)
+end 
+4.times do |season|
+    Season.create!(mmr: 5000, kda: 1.54, wl: 9.7, headshot_ratio: 5.55, team_member_id: 5)
+end 
